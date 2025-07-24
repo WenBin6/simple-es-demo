@@ -1,0 +1,33 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: simple-es-demo
+
+# Simple-ES配置
+simple-es:
+  # ES服务器配置
+  host: localhost
+  port: 9200
+  
+  # 认证配置（如果ES启用了安全认证）
+  username: elastic
+  password: 
+  
+  # 连接配置
+  connect-timeout: 5000
+  socket-timeout: 60000
+  
+  # 功能配置
+  print-dsl: true
+  map-underscore-to-camel-case: true
+
+# 日志配置
+logging:
+  level:
+    com.example.simplees: debug
+    org.elasticsearch: debug
+    co.elastic.clients: debug
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"

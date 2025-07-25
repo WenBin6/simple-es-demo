@@ -11,8 +11,8 @@ simple-es:
   host: localhost
   port: 9200
   
-  # 认证配置（如果ES启用了安全认证）
-  username: elastic
+  # 认证配置（开发环境关闭了安全认证）
+  username: 
   password: 
   
   # 连接配置

@@ -2,6 +2,7 @@ package com.example.simplees.config;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.stereotype.Component;
 
 /**
  * Simple-ES配置属性
@@ -10,6 +11,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  * @author Simple-ES
  */
 @Data
+@Component
 @ConfigurationProperties(prefix = "simple-es")
 public class SimpleEsProperties {
     

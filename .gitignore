@@ -37,6 +37,9 @@ build/
 ### Mac OS ###
 .DS_Store
 
+### idea ###
+.idea/
+
 ### Elasticsearch ###
 # 排除Elasticsearch安装目录（用户需要自己下载安装）
 elasticsearch-*/
